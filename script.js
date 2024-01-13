@@ -1,20 +1,21 @@
-let circlebtn = document.querySelector(".circle");
+let btn = document.querySelector(".circle");
 let background = document.getElementById("container");
-let value = true;
-circlebtn.addEventListener("click", ()=>{
-    if(circlebtn.style.left=="6px"){
-        background.style.backgroundColor= "black";
-        background.style.Color = "white";
-        circlebtn.style.top = "2px";
-        circlebtn.style.right = "6px";
-       
-        // value =false;
+
+let val=true;
+
+
+btn.addEventListener("click", ()=>{
+    if(val==true){
+        btn.style.right="3px";
+        background.style.backgroundColor="black";
+        background.style.color="white";
+        val=false
     }
     else{
-        background.style.backgroundColor= "white";
-        // circlebtn.classList.add(democircle)
-        circlebtn.style.left = "6px";
-        background.style.Color = "black";
-        // value=true;
+        btn.style.right="71px";
+        background.style.backgroundColor="white";
+        background.style.color="black";
+        val=true;
     }
+
 })
